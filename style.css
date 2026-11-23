@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #111827;
+    background-color: #faf9f6;
+    line-height: 1.6;
+}
+
+/* --- XERJOFF LUXURY HIGH-CONTRAST HEADER --- */
+.header-wrapper {
+    background-color: #111827;
+    border-bottom: 2px solid #AC946B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand-logo {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.brand-logo span {
+    color: #AC946B;
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #111827;
+    background-color: #AC946B;
+}
+
+.nav-link.active {
+    background-color: #AC946B;
+    color: #111827;
+}
+
+/* --- TWO-COLUMN WORKSPACE LAYOUT --- */
+.workspace-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 24px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 48px;
+}
+
+/* --- CURVY LUXURY HERO PANEL --- */
+.hero-billboard {
+    background-color: #111827;
+    padding: 56px 48px;
+    border-radius: 24px;
+    margin-bottom: 48px;
+    border: 2px solid #AC946B;
+}
+
+.hero-billboard h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.hero-billboard p {
+    font-size: 15px;
+    color: #d1d5db;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+/* --- SUBJECT MODULES CARDS --- */
+#modules {
+    margin-bottom: 48px;
+}
+
+.section-title {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #111827;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.section-desc {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.resource-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.academic-card {
+    background-color: #ffffff;
+    border: 2px solid #111827;
+    border-radius: 24px;
+    width: calc(50% - 12px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.academic-card:hover {
+    border-color: #AC946B;
+    background-color: #fffdf9;
+}
+
+.card-hero-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #111827;
+}
+
+.card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-meta {
+    display: inline-block;
+    background-color: #111827;
+    color: #AC946B;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    align-self: flex-start;
+}
+
+.card-body h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.card-body p {
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.action-link {
+    display: inline-block;
+    background-color: #111827;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 28px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 16px;
+    align-self: flex-start;
+    border: 1px solid #AC946B;
+    transition: all 0.2s ease;
+}
+
+.action-link:hover {
+    background-color: #AC946B;
+    color: #111827;
+}
+
+/* --- MULTIMEDIA HUB --- */
+#media-hub {
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    background-color: #ffffff;
+    border: 2px solid #111827;
+    border-radius: 24px;
+    padding: 32px;
+}
+
+figure {
+    flex: 1;
+    min-width: 280px;
+}
+
+.workshop-img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+}
+
+figcaption {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    color: #4b5563;
+    margin-top: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+.players-box {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.players-box h4 {
+    font-size: 11px;
+    color: #111827;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.media-element {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* --- SIDEBAR PANEL WIDGET --- */
+.panel-widget {
+    background-color: #ffffff;
+    border: 2px solid #111827;
+    border-radius: 24px;
+    padding: 28px;
+    position: sticky;
+    top: 120px;
+}
+
+.panel-widget h3 {
+    font-size: 11px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #AC946B;
+    padding-bottom: 6px;
+}
+
+.bulletin-board {
+    list-style: none;
+}
+
+.bulletin-board li {
+    margin-bottom: 16px;
+}
+
+.bulletin-board a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.bulletin-board a:hover {
+    color: #AC946B;
+}
+
+/* --- MATTE BLACK FOOTER --- */
+.premium-footer {
+    background-color: #111827;
+    color: #9ca3af;
+    border-top: 3px solid #AC946B;
+    padding: 64px 24px 48px;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid #374151;
+    padding-bottom: 32px;
+}
+
+.footer-links-row a {
+    color: #f3f4f6;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.2s ease;
+}
+
+.footer-links-row a:hover {
+    color: #AC946B;
+}
+
+.footer-signature-bar {
+    text-align: center;
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.footer-signature-bar p {
+    margin-bottom: 6px;
+}
+
+.footer-signature-bar strong {
+    color: #ffffff;
+}
+
+/* --- RESPONSIVE SCREEN BREAKPOINTS --- */
+@media (max-width: 900px) {
+    .workspace-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .panel-widget {
+        position: static;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 24px;
+    }
+
+    .hero-billboard {
+        padding: 48px 24px;
+    }
+
+    .hero-billboard h2 {
+        font-size: 32px;
+    }
+
+    .academic-card {
+        width: 100%;
+    }
+
+    .footer-links-row {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
